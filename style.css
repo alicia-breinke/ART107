@@ -67,7 +67,7 @@ header {
 
 .sidenav a:hover {
   text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration-style: solid;
   text-decoration-color: white;
 }
 
@@ -82,6 +82,22 @@ header {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.main a {
+  float: left;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.main a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+
 }
 
 model-viewer {
