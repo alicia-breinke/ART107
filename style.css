@@ -32,7 +32,7 @@ header {
 
 .section a:hover {
   text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration-style: solid;
   text-decoration-color: black;
 }
 
@@ -98,6 +98,15 @@ header {
   text-decoration-style: solid;
   text-decoration-color: black;
 
+}
+
+.main p {
+  margin: 5%;
+  font-style: normal;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: left;
 }
 
 model-viewer {
