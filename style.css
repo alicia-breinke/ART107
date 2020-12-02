@@ -2,41 +2,111 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-header {
-  float: top;
-  margin: 20px;
+p {
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 20px;
+  color: black;
+}
+
+.header {
+  background-color: black;
+  padding: 14px 16px;
+  text-align: center;
+  color: white;
+}
+
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(233,236,217);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+.column.side a {
+  float: left;
+  display: block;
   color: black;
   text-align: center;
-}
-
-.section {
-  float: left;
-  margin: 5px;
-  background-color: rgb(233,236,217);
-  width: 60%;
-  height: auto;
-}
-
-.section a  {
-  float: left;
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
 }
 
-.section a:hover {
+.column.side a:hover {
   text-decoration: none;
   opacity: 75%;
 }
 
-.section img {
-  width: 75%;
+.main {
+  margin-top: 25px;
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(233,236,217);
+}
+
+
+.main a {
+  float: left;
+  padding: 10px;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main a:hover {
+  text-decoration: none;
+  opacity: 75%;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ul {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+ img {
+  width: 50%;
   height: auto;
 }
 
@@ -44,72 +114,9 @@ header {
   vertical-align: bottom;
 }
 
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: rgb(237, 237, 237);
-  display: block;
-}
-
-.sidenav a:hover {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: white;
-}
-
-
-
-.main { 
-  margin-left: 10%; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.main a {
-  float: none;
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-}
-
-.main a:hover {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: black;
-
-}
-
-p {
-  font-style: normal;
-  font-weight: normal;
-  font-family: sans-serif;
-  font-size: 24px;
-  text-align: left;
-}
-
-model-viewer {
-  float: left;
-  margin: 1%;
-  width: 400px;
-  height: auto;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
