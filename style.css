@@ -124,3 +124,13 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.section1 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  float: left;
+  width: 80%;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(233,236,217);
+}
