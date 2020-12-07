@@ -3,9 +3,33 @@
   <head>
     <title>Project 1</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <!--
 These controls the size and shape of the model viewer window. It can be housed in you CSS as well. -->
+
+<style>
+
+model-viewer {
+  float: left;
+  margin: 10px;
+  width: 45%;
+  height: 800px;
+}
+
+.section {
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 90%;
+  height: auto;
+}
+
+</style>
 </head>
+<title>3D Modal</title>
   <body>
 
 <div class="header">
@@ -19,18 +43,22 @@ These controls the size and shape of the model viewer window. It can be housed i
           <a href="project3.html">Project 3</a>
      </div>
 
-<div class="row">
-  <div class="column side">
-<a href="https://alicia-breinke.github.io/3d-model/" target="_blank">
-  <img class="bottom" src="link-modal.jpg" style="width:60%"><p>Guiding Lights</p>
-</a>
-</div>
+     <model-viewer camera-controls skybox-image="https://cdn.glitch.com/4a071b39-0bf7-4634-807c-8cd70364df8b%2Fday.jpg?v=1602215929898" src="https://cdn.glitch.com/4a071b39-0bf7-4634-807c-8cd70364df8b%2Fscene-day.gltf?v=1602186321129"
+                alt="image of day"
+                >
+                </model-viewer>
+  <model-viewer camera-controls skybox-image="https://cdn.glitch.com/4a071b39-0bf7-4634-807c-8cd70364df8b%2Fnight.jpg?v=1602215518642" src="https://cdn.glitch.com/4a071b39-0bf7-4634-807c-8cd70364df8b%2Fscene-day.gltf?v=1602186321129"
+                alt="image of night"
+                >
+  </model-viewer>
 
-<div class="column middle">
-  <h2>Artist Statement</h2>
+  <div class="section">
+    <h1>Artist Statement</h1>
   <p><i>Guiding Lights</i> is a project that was inspired by the grueling exodus of Yeonmi Park, after she escaped from North Korea for the hopes of a better future.  The project is meant to trace some of her trials, of going through mountains and the Mongolian Desert, before arriving in South Korea.  I also wanted to represent the guidance of the North Star and other cosmic objects, which provided guidance during this uncertain time in her life.</p>
 </div>
-</div>
+
+  </div>
+
 
 </body>
 </html>
